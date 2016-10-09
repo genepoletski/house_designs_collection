@@ -1,0 +1,13 @@
+<a href="#<%= id %>">
+  <img class="img-responsive" src="js/modules/ep-mod-house-projects/data/projects/<%= id %>/img/<%= thumb_img %>">
+  <h4 class="text-center">Проект <%= title %></h4>
+  <div class="text-center"><%= area %> м<sup>2</sup></div>
+  <div class="text-center"><%= value_name[ tech ] %></div>
+  <div class="text-center">
+    <% if ( realized === 'in-progress' ) { %>
+      <%= value_name[ realized ] %>
+    <% } else { %>
+      <%= value_name.built + " " + realized %>
+    <% } %>
+  </div>
+</a>

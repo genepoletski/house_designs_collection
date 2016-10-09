@@ -1,0 +1,140 @@
+{
+  "id"    : "16005",
+  "design" : {
+    "architect" : [
+      {
+        "type" : "architect-base",
+        "cost" : 7200
+      },
+      {
+        "type" : "architect-roof",
+        "cost" : 800
+      }
+    ],
+    "structure" : [
+      {
+        "type" : "structure-base",
+        "cost" : 3600
+      },
+      {
+        "type"  : "structure-beams",
+        "cost" : 800
+      },
+      {
+        "type" : "structure-rafters",
+        "cost" : 1200
+      },
+      {
+        "type" : "structure-foundation",
+        "cost" : 800
+      }
+    ]
+  },
+  "floors" : {
+    "floor_01" : [
+      {
+        "number" : 1,
+        "type"   : "entryway",
+        "area"   : 1.8
+      },
+      {
+        "number" : 2,
+        "type"   : "relax-room",
+        "area"   : 15.5
+      },
+      {
+        "number" : 3,
+        "type"   : "shower-room",
+        "area"   : 5.9
+      },
+      {
+        "number" : 4,
+        "type"   : "steam-room",
+        "area"   : 4.6
+      }
+    ]
+  },
+  "history" : [
+    {
+      "heading"    : "Как всё начиналось",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    },{
+      "heading"    : "На следующем этапе",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    }
+  ],
+  "structures" : [
+    {
+      "type"     : "foundation",
+      "variants" : [
+        {
+          "type"  : "foundation-slab",
+          "unit"  : "m2",
+          "volume" : 32.7
+        },
+        {
+          "type"  : "foundation-perimeter",
+          "unit"  : "m",
+          "volume" : 28.1
+        }
+      ]
+    },
+    {
+      "type"     : "walls",
+      "subs" : [
+        {
+          "type"   : "walls-wooden",
+          "unit"   : "m2",
+          "volume" : 73.2
+        }
+      ]
+    },
+    {
+      "type"      : "roof",
+      "subs"  : [
+        {
+          "type"   : "roof-cover",
+          "unit"   : "m2",
+          "volume" : 50.7
+        },
+        {
+          "type"   : "roof-insulation",
+          "unit"   : "m2",
+          "volume" : 34.9
+        }
+      ]
+    }
+  ],
+  "images" : [
+    {
+      "main_img"  : "3d_view_01.jpg",
+      "thumb_img" : "3d_view_01_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_front.jpg",
+      "thumb_img" : "3d_facade_front_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_right.jpg",
+      "thumb_img" : "3d_facade_right_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_back.jpg",
+      "thumb_img" : "3d_facade_back_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_left.jpg",
+      "thumb_img" : "3d_facade_left_thumb.jpg"
+    }
+  ],
+  "floor_plans" : [
+    {
+      "title"    : "floor_01",
+      "main_img" : "floor_01.jpg"
+    }
+  ]
+}

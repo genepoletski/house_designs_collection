@@ -1,0 +1,215 @@
+{
+  "id"    : "16004",
+  "design" : {
+    "architect" : [
+      {
+        "type" : "architect-base",
+        "cost" : 20600
+      },
+      {
+        "type" : "architect-roof",
+        "cost" : 1500
+      }
+    ],
+    "structure" : [
+      {
+        "type" : "structure-base",
+        "cost" : 10300
+      },
+      {
+        "type"  : "structure-beams",
+        "cost" : 1500
+      },
+      {
+        "type" : "structure-rafters",
+        "cost" : 2200
+      },
+      {
+        "type" : "structure-foundation",
+        "cost" : 1500
+      }
+    ]
+  },
+  "floors" : {
+    "floor_01" : [
+      {
+        "number" : 1,
+        "type"   : "porch",
+        "area"   : 5.9
+      },
+      {
+        "number" : 2,
+        "type"   : "kitchen-dining",
+        "area"   : 18
+      },
+      {
+        "number" : 3,
+        "type"   : "great-room",
+        "area"   : 39.3
+      },
+      {
+        "number" : 4,
+        "type"   : "bedroom",
+        "area"   : 10.8
+      },
+      {
+        "number" : 5,
+        "type"   : "stairs",
+        "area"   : 6.6
+      },
+      {
+        "number" : 6,
+        "type"   : "lobby",
+        "area"   : 3.2
+      },
+      {
+        "number" : 7,
+        "type"   : "cloakroom",
+        "area"   : 3.8
+      },
+      {
+        "number" : 8,
+        "type"   : "lavatory",
+        "area"   : 3.8
+      },
+      {
+        "number" : 9,
+        "type"   : "porch",
+        "area"   : 5.9
+      },
+      {
+        "number" : 10,
+        "type"   : "veranda",
+        "area"   : 22.5
+      },
+      {
+        "number" : 11,
+        "type"   : "terrace",
+        "area"   : 27.8
+      }
+    ],
+    "floor_02"   : [
+      {
+        "number" : 12,
+        "type"   : "corridor",
+        "area"   : 13.4
+      },
+      {
+        "number" : 13,
+        "type"   : "bedroom",
+        "area"   : 21
+      },
+      {
+        "number" : 14,
+        "type"   : "cloakroom",
+        "area"   : 6.4
+      },
+      {
+        "number" : 15,
+        "type"   : "bedroom",
+        "area"   : 10.8
+      },
+      {
+        "number" : 16,
+        "type"   : "bedroom",
+        "area"   : 18
+      },
+      {
+        "number" : 17,
+        "type"   : "lavatory",
+        "area"   : 8
+      }
+    ]
+  },
+  "history" : [
+    {
+      "heading"    : "Как всё начиналось",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    },{
+      "heading"    : "На следующем этапе",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    }
+  ],
+  "structures" : [
+    {
+      "type"     : "foundation",
+      "variants" : [
+        {
+          "type"  : "foundation-slab",
+          "unit"  : "m2",
+          "volume" : 160.7
+        },
+        {
+          "type"  : "foundation-perimeter",
+          "unit"  : "m",
+          "volume" : 123
+        }
+      ]
+    },
+    {
+      "type"     : "walls",
+      "subs" : [
+        {
+          "type"   : "walls-wooden",
+          "unit"   : "m2",
+          "volume" : 501.9
+        }
+      ]
+    },
+    {
+      "type"      : "roof",
+      "subs"  : [
+        {
+          "type"   : "roof-cover",
+          "unit"   : "m2",
+          "volume" : 210.6
+        },
+        {
+          "type"   : "roof-insulation",
+          "unit"   : "m2",
+          "volume" : 102
+        }
+      ]
+    }
+  ],
+  "images" : [
+    {
+      "main_img"  : "3d_view_01.jpg",
+      "thumb_img" : "3d_view_01_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_view_02.jpg",
+      "thumb_img" : "3d_view_02_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_front.jpg",
+      "thumb_img" : "3d_facade_front_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_right.jpg",
+      "thumb_img" : "3d_facade_right_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_back.jpg",
+      "thumb_img" : "3d_facade_back_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_left.jpg",
+      "thumb_img" : "3d_facade_left_thumb.jpg"
+    }
+  ],
+  "floor_plans" : [
+    {
+      "title"    : "floor_01",
+      "main_img" : "floor_01.jpg"
+    },
+    {
+      "title"    : "floor_02",
+      "main_img" : "floor_02.jpg"
+    }
+  ]
+}

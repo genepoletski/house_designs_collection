@@ -1,0 +1,180 @@
+{
+  "id"    : "16010",
+  "design" : {
+    "architect" : [
+      {
+        "type" : "architect-base",
+        "cost" : 9000
+      },
+      {
+        "type" : "architect-roof",
+        "cost" : 900
+      }
+    ],
+    "structure" : [
+      {
+        "type" : "structure-base",
+        "cost" : 4500
+      },
+      {
+        "type"  : "structure-beams",
+        "cost" : 900
+      },
+      {
+        "type" : "structure-rafters",
+        "cost" : 1300
+      },
+      {
+        "type" : "structure-foundation",
+        "cost" : 900
+      }
+    ]
+  },
+  "floors" : {
+    "floor_01" : [
+      {
+        "number" : 1,
+        "type"   : "veranda",
+        "area"   : 7.6
+      },
+      {
+        "number" : 2,
+        "type"   : "relax-room",
+        "area"   : 21.4
+      },
+      {
+        "number" : 3,
+        "type"   : "dressing-room",
+        "area"   : 10.8
+      },
+      {
+        "number" : 4,
+        "type"   : "shower-room",
+        "area"   : 4.3
+      },
+      {
+        "number" : 5,
+        "type"   : "steam-room",
+        "area"   : 5.4
+      },
+      {
+        "number" : 6,
+        "type"   : "restroom",
+        "area"   : 2.2
+      },
+      {
+        "number" : 7,
+        "type"   : "porch",
+        "area"   : 2.8
+      }
+    ],
+    "floor_02" : [
+      {
+        "number" : 8,
+        "type"   : "balcony-inner",
+        "area"   : 1.6
+      },
+      {
+        "number" : 9,
+        "type" : "bedroom",
+        "area" : 24.2
+      },
+      {
+        "number" : 10,
+        "type"   : "balcony",
+        "area"   : 5.6
+      }
+    ]
+  },
+  "history" : [
+    {
+      "heading"    : "Как всё начиналось",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    },{
+      "heading"    : "На следующем этапе",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    }
+  ],
+  "structures" : [
+    {
+      "type"     : "foundation",
+      "variants" : [
+        {
+          "type"  : "foundation-slab",
+          "unit"  : "m2",
+          "volume" : 65.7
+        },
+        {
+          "type"  : "foundation-perimeter",
+          "unit"  : "m",
+          "volume" : 55.1
+        }
+      ]
+    },
+    {
+      "type"     : "walls",
+      "subs" : [
+        {
+          "type"   : "walls-wooden",
+          "unit"   : "m2",
+          "volume" : 208.2
+        }
+      ]
+    },
+    {
+      "type"      : "roof",
+      "subs"  : [
+        {
+          "type"   : "roof-cover",
+          "unit"   : "m2",
+          "volume" : 113.2
+        },
+        {
+          "type"   : "roof-insulation",
+          "unit"   : "m2",
+          "volume" : 61
+        }
+      ]
+    }
+  ],
+  "images" : [
+    {
+      "main_img"  : "3d_view_01.jpg",
+      "thumb_img" : "3d_view_01_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_view_02.jpg",
+      "thumb_img" : "3d_view_02_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_front.jpg",
+      "thumb_img" : "3d_facade_front_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_right.jpg",
+      "thumb_img" : "3d_facade_right_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_back.jpg",
+      "thumb_img" : "3d_facade_back_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_left.jpg",
+      "thumb_img" : "3d_facade_left_thumb.jpg"
+    }
+  ],
+  "floor_plans" : [
+    {
+      "title"    : "floor_01",
+      "main_img" : "floor_01.jpg"
+    },
+    {
+      "title"    : "floor_02",
+      "main_img" : "floor_02.jpg"
+    }
+  ]
+}

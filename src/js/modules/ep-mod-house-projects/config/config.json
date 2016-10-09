@@ -1,0 +1,8 @@
+{
+  "name": "ep-mod-hp-config",
+  "version": "0.0.1",
+  "routes" : {
+    "base_route" : ""
+  },
+  "mod_path" : "js/modules/ep-mod-house-projects"
+}

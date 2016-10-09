@@ -1,0 +1,72 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "project_list" : [
+    {
+      "id"        : "16001",
+      "path"      : "data/projects/16001",
+      "title"     : "ПБ-16.001",
+      "type"      : "bath-house",
+      "tech"      : "profiled-beam",
+      "area"      : 36.7,
+      "floors"    : 1,
+      "realized"  : "2016-апрель",
+      "thumb_img" : "3d_view_01_md.jpg"
+    },
+    {
+      "id"        : "16002",
+      "path"      : "data/projects/16002",
+      "title"     : "ПБ-16.002",
+      "type"      : "bath-house",
+      "tech"      : "profiled-beam",
+      "area"      : 48.4,
+      "floors"    : 1,
+      "realized"  : "2016-март",
+      "thumb_img" : "3d_view_01_md.jpg"
+    },
+    {
+      "id"        : "16004",
+      "path"      : "data/projects/16004",
+      "title"     : "ПБ-16.004",
+      "type"      : "house",
+      "tech"      : "profiled-beam",
+      "area"      : 225.2,
+      "floors"    : 2,
+      "realized"  : "2016-май",
+      "thumb_img" : "3d_view_01_md.jpg"
+    },
+    {
+      "id"        : "16005",
+      "path"      : "data/projects/16005",
+      "title"     : "ПБ-16.005",
+      "type"      : "bath-house",
+      "tech"      : "profiled-beam",
+      "area"      : 27.8,
+      "floors"    : 1,
+      "realized"  : "2016-май",
+      "thumb_img" : "3d_view_01_md.jpg"
+    },
+    {
+      "id"        : "16006",
+      "path"      : "data/projects/16006",
+      "title"     : "ПБ-16.006",
+      "type"      : "house",
+      "tech"      : "aerated-concrete",
+      "area"      : 158.8,
+      "floors"    : 2,
+      "realized"  : "2016-май",
+      "thumb_img" : "3d_view_01_md.jpg"
+    },
+    {
+      "id"        : "16010",
+      "path"      : "data/projects/16010",
+      "title"     : "ПБ-16.010",
+      "type"      : "bath-house",
+      "tech"      : "profiled-beam",
+      "area"      : 85.9,
+      "floors"    : 2,
+      "realized"  : "2016-июль",
+      "thumb_img" : "3d_view_01_md.jpg"
+    }
+  ]
+}

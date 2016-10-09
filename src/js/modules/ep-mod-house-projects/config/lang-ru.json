@@ -1,0 +1,33 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "dictionary" : {
+    "area"            : "площадь",
+    "bath-house"      : "баня",
+    "bedroom"         : "спальня",
+    "floor_00"        : "цокольный этаж",
+    "floor_01"        : "1й этаж",
+    "floor_02"        : "2й этаж",
+    "floors"          : "этажи",
+    "foundation"      : "фундамент",
+    "foundation-perimeter" : "ленточный",
+    "foundation-slab" : "плита",
+    "garage"          : "гараж",
+    "greatroom"       : "гостиная",
+    "house"           : "дом",
+    "laften"          : "лафет",
+    "m"               : "м",
+    "m2"              : "м2",
+    "m3"              : "м3",
+    "profiled-beam"   : "профилированный брус",
+    "restroom"        : "санузел",
+    "roof"            : "крыша",
+    "roof-cover"      : "кровля",
+    "roof-insulation" : "утеплитель",
+    "tech"            : "технология",
+    "type"            : "тип",
+    "variants"        : "варианты",
+    "walls"           : "стены",
+    "walls-wooden"    : "деревянные"
+  }
+}

@@ -1,0 +1,53 @@
+TODO : Module should use ep-mod-house-projects/config/config.json for its setup
+TODO : Module should have capability to store and restore its state from URL #
+TODO : Filter and project Models should inherit from different superclasses
+
+LANGUAGE
+Module uses language specific user-friendly key and values names for templates
+from: ep-mod-house-projects/config/language.json
+
+
+WORKFLOW
+I. User driven workflows
+
+1. User changes filter adjustments :
+
+1.1.  Filter Model View orders its Model to change settings
+1.2.  Filter Model changes its 'set_values' and triggers 'changeFilter' on self
+1.3.  Filters Collection, listening to Filter Model event 'changeFilter',
+      triggers 'requestFilteredEstimate'
+1.4.  Projects Collection, listening to Filters Collection
+      'requestFilteredEstimate', invokes Filters Collection method
+      'setFilteredEstimate' with a set of filtered projects
+1.5.  Filters Collection updates number of filtered projects and triggers on
+      itself 'changeFilteredEstimate'
+1.6.  Filters View, listening to 'changeFilteredEstimate', updates estimate
+      number of filtered projects on its 'submit' button
+
+
+2. User clicks 'submit' :
+
+2.1.  Filters View orders its Collection to apply filters.
+2.2.  Filters Collection triggers 'applyFilters' on self.
+2.3.  Projects Collection, listening to 'applyFilters', filters self ( resets
+      with a set of filtered projects ).
+2.4.  Projects View, listening to 'reset' of its Collection, renders changed
+      Collection.
+
+
+3. User clicks 'reset' :
+
+3.1.  Filters View orders its Collection to reset filters.
+3.2.  Filters Collection orders each of its models to reset itself (3.3.), then
+      triggers 'resetFilters' on self (3.4.)
+
+3.3.1.   Filter Models reset their 'state_values' and trigger 'resetFilter' on
+         themselves.
+3.3.2.   Filter Views, listening to 'change' event on their Models, re render
+         themselves.
+
+3.4.1.   Projects Collection, listening to 'resetFilters' on Filters Collection,
+         resets self with '_full_collection_models' ( stored copy of all the
+         Models )
+3.4.2.   Projects View, listening to 'reset' of its Collection, renders changed
+         Collection.

@@ -1,0 +1,109 @@
+.ep-mod-hp-filters {
+  padding : 3em 2em 2em 2em;
+}
+
+.ep-mod-hp-filters form {
+  padding: 1em;
+  background-color: #c7ddef;
+  border-radius: 1em;
+}
+
+.ep-mod-hp-filters label {
+  font-weight: normal;
+}
+
+.ep-mod-hp-filters label:hover {
+  cursor: pointer;
+}
+
+.ep-mod-hp-filter-min-max input {
+  text-align: center;
+  width: 4em;
+}
+.ep-mod-hp-filter-min-max div {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.ep-mod-hp-filter-min-max .ep-mod-hp-filter-min-max-slider {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ep-mod-hp-filters-submit,
+.ep-mod-hp-filters-reset {
+  display: block;
+  width: 80%;
+  margin: 0 auto 0.5em auto;
+  border-radius: 0.25em;
+}
+
+.ep-mod-hp-filter {
+  padding-bottom: 2em;
+}
+
+.ep-mod-hp-filter {
+  padding-bottom: 2em;
+}
+
+.ep-mod-hp-project-brief {
+  padding: 1em;
+  border: 2px solid transparent;
+  border-radius: 1em;
+}
+
+.ep-mod-hp-project-brief:hover {
+  border-color: #c7ddef;
+}
+
+.ep-mod-hp-project-brief a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ep-mod-hp-project-brief a:hover {
+  color: inherit;
+}
+
+.ep-mod-hp-project-brief img {
+  border-radius: 0.5em;
+}
+
+
+/****************************/
+/*                          */
+/*     Project detailed     */
+/*                          */
+/****************************/
+
+.ep-mod-hp-project-detailed {
+  margin-bottom: 4em;
+}
+
+.ep-mod-hp-detailed-overview h3 {
+  margin-bottom: 2em;
+}
+
+.ep-mod-hp-detailed-overview table {
+  font-size: 1.2em;
+}
+
+.ep-mod-hp-project-detailed-plans,
+.ep-mod-hp-project-detailed-structures,
+.ep-mod-hp-project-detailed-design {
+  margin-top: 4em;
+}
+
+.ep-mod-hp-project-detailed-plans h3,
+.ep-mod-hp-project-detailed-structures h3,
+.ep-mod-hp-project-detailed-design h3 {
+  margin-bottom: 2em;
+}
+
+.ep-mod-hp-project-detailed tfoot {
+  font-weight : bold;
+}
+
+.ep-mod-hp-project-detailed-tr-even {
+  background-color : #f9f9f9;
+}

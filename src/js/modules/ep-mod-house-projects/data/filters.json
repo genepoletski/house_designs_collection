@@ -1,0 +1,26 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "filter_list"    : [
+    {
+      "filter_type" : "min_max",
+      "key"         : "area",
+      "values"      : [ 0, 300 ]
+    },
+    {
+      "filter_type" : "simple",
+      "key"         : "floors",
+      "values"      : [ 1, 2 ]
+    },
+    {
+      "filter_type" : "simple",
+      "key"         : "type",
+      "values"      : [ "house", "bath-house" ]
+    },
+    {
+      "filter_type" : "simple",
+      "key"         : "tech",
+      "values"      : [ "profiled-beam", "laften", "aerated-concrete" ]
+    }
+  ]
+}

@@ -1,0 +1,296 @@
+<h2>Проект <%= title %></h2>
+<div class="row clearfix">
+  <div class="col-xs-12 col-md-9 pull-left ep-mod-hp-image-viewer" ></div>
+  <div class="col-xs-12 col-md-3 ep-mod-hp-detailed-overview">
+    <h3>Общие параметры</h3>
+    <table class="table">
+      <tr>
+        <td>Площадь</td>
+        <td class="text-center"><%= _model.getFloorsArea().toFixed(1) %> м<sup>2</sup></td>
+      </tr>
+
+      <% if ( _model.getRoomsNumber( 'bedroom' ) > 0 ) { %>
+      <tr>
+        <td>Спальни</td>
+        <td class="text-center"><%= _model.getRoomsNumber( 'bedroom' ) %> шт</td>
+      </tr>
+      <% } %>
+
+      <% if ( _model.getRoomsNumber( 'lavatory' ) > 0 ) { %>
+      <tr>
+        <td>Санузлы</td>
+        <td class="text-center"><%= _model.getRoomsNumber( 'lavatory' ) %> шт</td>
+      </tr>
+      <% } %>
+
+      <% if ( _model.getRoomsNumber( 'restroom' ) > 0 ) { %>
+      <tr>
+        <td>Туалеты</td>
+        <td class="text-center"><%= _model.getRoomsNumber( 'restroom' ) %> шт</td>
+      </tr>
+      <% } %>
+
+      <% if ( _model.getRoomsNumber( 'steam-room' ) > 0 ) { %>
+      <tr>
+        <td>Парная</td>
+        <td class="text-center"><%= _model.getRoomArea( "floor_01", "steam-room" ) %> м<sup>2</sup></td>
+      </tr>
+      <% } %>
+
+      <% if ( _model.getRoomsNumber( 'shower-room' ) > 0 ) { %>
+      <tr>
+        <td>Помывочная</td>
+        <td class="text-center"><%= _model.getRoomArea( "floor_01", "shower-room" ) %> м<sup>2</sup></td>
+      </tr>
+      <% } %>
+
+    </table>
+  </div>
+</div>
+<div class="row clearfix">
+
+    <% var roman_numerals = [
+    'I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX', 'X'
+    ]; %>
+
+    <% var index = 0; %>
+
+    <!--                                        -->
+    <!--           BEGIN PLANS BLOCK            -->
+    <!--                                        -->
+    <div class="ep-mod-hp-project-detailed-plans col-xs-12">
+      <div class="row">
+        <h3 class="col-xs-12">Планировочные решения</h3>
+
+        <!--                                       -->
+        <!--        BEGIN PLANS TABLE BLOCK        -->
+        <!--                                       -->
+        <div class="col-xs-12 col-sm-4 col-md-3">
+
+          <table class="table">
+
+            <thead class="text-primary">
+            <th class="text-center">№ п/п</th>
+            <th>Помещение</th>
+            <th class="text-center">Площадь, м<sup>2</sup></th>
+            </thead>
+
+            <tr class="text-center small">
+              <td>1</td>
+              <td>2</td>
+              <td>3</td>
+            </tr>
+
+            <% for (var floor in floors) { %>
+
+            <tr class="bg-primary">
+              <td class="text-center"><%= roman_numerals[ index ] %></td>
+              <td colspan="2">
+                <%= value_name[ floor ] %>
+              </td>
+            </tr>
+
+            <% floors[ floor ].forEach( function ( room, index ) { %>
+
+            <tr class="<%= 'ep-mod-hp-project-detailed-tr-' +
+            ( index%2 === 1 ? 'even' : 'odd' ) %>">
+              <td class="text-center"><%= room.number %></td>
+              <td><%= value_name[ room.type ] %></td>
+              <td class="text-center"><%= room.area %></td>
+            </tr>
+
+            <% }); %>
+
+            <tr class="text-primary">
+              <td></td>
+              <td><strong>Итого</strong></td>
+              <td class="text-center">
+                <strong><%= _model.getFloorArea( floor ).toFixed(1) %></strong>
+              </td>
+            </tr>
+
+            <% index++; %>
+
+            <% } %>
+            <tfoot class="bg-primary">
+            <td></td>
+            <td>ВСЕГО</td>
+            <td class="text-center"><%= _model.getFloorsArea().toFixed(1) %></td>
+            </tfoot>
+
+          </table>
+        </div>
+        <!--                                       -->
+        <!--         END PLANS TABLE BLOCK         -->
+        <!--                                       -->
+
+        <!--                                       -->
+        <!--     BEGIN PLANS TABBED IMGS BLOCK     -->
+        <!--                                       -->
+        <div class="ep-mod-hp-jquery-tabbed-images col-xs-12 col-sm-8 col-md-9">
+        </div>
+        <!--                                       -->
+        <!--      END PLANS TABBED IMGS BLOCK      -->
+        <!--                                       -->
+    </div>
+
+  </div>
+  <!--                                        -->
+  <!--            END DESIGN BLOCK            -->
+  <!--                                        -->
+
+
+  <div class="ep-mod-hp-project-detailed-structures col-xs-12 pull-left">
+    <h3>Объемы основных конструкций</h3>
+
+    <% index = 0; %>
+
+    <table class="table">
+
+      <thead class="text-primary">
+        <th class="text-center">№ п/п</th>
+        <th>Наименование</th>
+        <th class="text-center">Ед.изм</th>
+        <th class="text-center">Объем, ед.изм.</th>
+      </thead>
+
+      <tr class="text-center small">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+        <td>4</td>
+      </tr>
+
+
+      <% structures.forEach( function ( structure, index ) { %>
+
+      <tr class="bg-info">
+        <td class="text-center"><%= roman_numerals[ index ] %></td>
+        <td colspan="3">
+          <%= value_name[ structure.type ] %>
+        </td>
+      </tr>
+
+        <% if ( structure.hasOwnProperty( 'variants' ) ) {  %>
+
+      <tr>
+        <td></td>
+        <td class="text-info"><%= value_name[ 'variants' ] %></td>
+      </tr>
+
+          <% structure.variants.forEach( function ( variant, index ) { %>
+
+      <tr class="<%= 'ep-mod-hp-project-detailed-tr-' +
+            ( index%2 === 0 ? 'even' : 'odd' ) %>">
+        <td class="text-center"><%= index + 1 %></td>
+        <td><%= value_name[ variant.type ] %></td>
+        <td class="text-center"><%= value_name[ variant.unit ] %></td>
+        <td class="text-center"><%= variant.volume %></td>
+      </tr>
+
+          <% } ); %>
+
+        <% } %>
+
+        <% if ( structure.hasOwnProperty( 'subs' ) ) {  %>
+
+          <% structure.subs.forEach( function ( substructure, index ) { %>
+
+      <tr  class="<%= 'ep-mod-hp-project-detailed-tr-' +
+            ( index%2 === 1 ? 'even' : 'odd' ) %>">
+        <td class="text-center"><%= index + 1 %></td>
+        <td><%= value_name[ substructure.type ] %></td>
+        <td class="text-center"><%= value_name[ substructure.unit ] %></td>
+        <td class="text-center"><%= substructure.volume %></td>
+      </tr>
+
+          <% } ); %>
+
+        <% } %>
+
+      <% } ); %>
+
+    </table>
+
+  </div>
+
+  </div>
+
+  <div class="ep-mod-hp-project-detailed-design row">
+  <div class="col-xs-12 col-sm-12 col-md-6 pull-left">
+    <h3>Стоимость проектирования</h3>
+
+    <table class="table">
+      <thead class="text-primary">
+        <th class="text-center">№ п/п</th>
+        <th>Описание</th>
+        <th class="text-center">Сумма, руб.</th>
+      </thead>
+
+      <tr class="text-center small">
+        <td>1</td>
+        <td>2</td>
+        <td>3</td>
+      </tr>
+
+      <% index = 0 %>
+      <% for (var section in design) { %>
+        <% if ( design.hasOwnProperty( section ) ) { %>
+
+      <tr class="bg-primary">
+        <td class="text-center"><%= roman_numerals[ index ] %></td>
+        <td colspan="2"> <%= value_name[ section ] %></td>
+      </tr>
+
+          <% design[ section ].forEach( function ( work_type, index ) { %>
+
+      <tr>
+        <td class="text-center"><%= index + 1 %></td>
+        <td><%= value_name[ work_type.type ] %></td>
+        <td class="text-center"><%= _model.n2s( work_type.cost ) %></td>
+      </tr>
+
+          <% }) %>
+
+        <% } %>
+
+      <tr class="text-primary">
+        <td></td>
+        <td>
+          <strong>Итого</strong>
+        </td>
+        <td class="text-center">
+          <strong><%= _model.n2s( _model.getSectionCost( section ) ) %></strong>
+        </td>
+      </tr>
+
+      <% index++ %>
+      <% } %>
+
+      <tr class="bg-primary">
+        <td></td>
+        <td>
+          <strong>ВСЕГО</strong>
+        </td>
+        <td class="text-center">
+          <strong><%= _model.n2s( _model.getDesignTotalCost() ) %></strong>
+        </td>
+      </tr>
+
+    </table>
+  </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <h3>История проекта</h3>
+      <br />
+      <% history.forEach( function ( section ) { %>
+        <% if ( section.heading ) { %>
+          <h4><%= section.heading %></h4>
+        <% } %>
+        <% section.paragraphs.forEach( function ( paragraph ) { %>
+          <p><%= paragraph%></p>
+        <% } ) %>
+      <% } ) %>
+    </div>
+</div>
+

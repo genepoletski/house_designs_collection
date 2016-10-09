@@ -1,0 +1,195 @@
+{
+  "id"    : "16006",
+  "design" : {
+    "architect" : [
+      {
+        "type" : "architect-base",
+        "cost" : 17900
+      },
+      {
+        "type" : "architect-roof",
+        "cost" : 1200
+      }
+    ],
+    "structure" : [
+      {
+        "type" : "structure-base",
+        "cost" : 9000
+      },
+      {
+        "type"  : "structure-beams",
+        "cost" : 1200
+      },
+      {
+        "type" : "structure-rafters",
+        "cost" : 1800
+      },
+      {
+        "type" : "structure-foundation",
+        "cost" : 1200
+      }
+    ]
+  },
+  "floors" : {
+    "floor_01" : [
+      {
+        "number" : 1,
+        "type"   : "porch",
+        "area"   : 3.3
+      },
+      {
+        "number" : 2,
+        "type"   : "lobby",
+        "area"   : 11
+      },
+      {
+        "number" : 3,
+        "type"   : "lavatory",
+        "area"   : 12.1
+      },
+      {
+        "number" : 4,
+        "type"   : "boiler-room",
+        "area"   : 11
+      },
+      {
+        "number" : 5,
+        "type"   : "great-room",
+        "area"   : 22
+      },
+      {
+        "number" : 6,
+        "type"   : "kitchen-dining",
+        "area"   : 15.9
+      },
+      {
+        "number" : 7,
+        "type"   : "veranda",
+        "area"   : 13.3
+      },
+      {
+        "number" : 8,
+        "type"   : "porch",
+        "area"   : 2.5
+      }
+    ],
+    "floor_02"   : [
+      {
+        "number" : 9,
+        "type"   : "corridor",
+        "area"   : 6.8
+      },
+      {
+        "number" : 10,
+        "type"   : "bedroom",
+        "area"   : 13.5
+      },
+      {
+        "number" : 11,
+        "type"   : "bedroom",
+        "area"   : 18.2
+      },
+      {
+        "number" : 12,
+        "type"   : "bedroom",
+        "area"   : 18.2
+      },
+      {
+        "number" : 13,
+        "type"   : "lavatory",
+        "area"   : 11
+      }
+    ]
+  },
+  "history" : [
+    {
+      "heading"    : "Как всё начиналось",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    },{
+      "heading"    : "На следующем этапе",
+      "paragraphs" : [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada quam non dolor tempus varius. Pellentesque maximus sagittis purus, eget tristique nunc tincidunt eu. Maecenas imperdiet enim non urna consectetur dictum. Donec semper id nulla vel faucibus. Sed sit amet justo accumsan diam consequat finibus. Curabitur fermentum mauris sit amet cursus porttitor. Etiam mollis mollis porta. Curabitur non odio non ipsum aliquet mollis id nec neque. Suspendisse facilisis sapien non augue aliquam, sit amet placerat quam tincidunt. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos"
+      ]
+    }
+  ],
+  "structures" : [
+    {
+      "type"     : "foundation",
+      "variants" : [
+        {
+          "type"  : "foundation-slab",
+          "unit"  : "m2",
+          "volume" : 113.9
+        },
+        {
+          "type"  : "foundation-perimeter",
+          "unit"  : "m",
+          "volume" : 83.6
+        }
+      ]
+    },
+    {
+      "type"     : "walls",
+      "subs" : [
+        {
+          "type"   : "aerated-concrete",
+          "unit"   : "m2",
+          "volume" : 339
+        }
+      ]
+    },
+    {
+      "type"      : "roof",
+      "subs"  : [
+        {
+          "type"   : "roof-cover",
+          "unit"   : "m2",
+          "volume" : 202.2
+        },
+        {
+          "type"   : "roof-insulation",
+          "unit"   : "m2",
+          "volume" : 111.6
+        }
+      ]
+    }
+  ],
+  "images" : [
+    {
+      "main_img"  : "3d_view_01.jpg",
+      "thumb_img" : "3d_view_01_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_view_02.jpg",
+      "thumb_img" : "3d_view_02_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_front.jpg",
+      "thumb_img" : "3d_facade_front_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_right.jpg",
+      "thumb_img" : "3d_facade_right_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_back.jpg",
+      "thumb_img" : "3d_facade_back_thumb.jpg"
+    },
+    {
+      "main_img"  : "3d_facade_left.jpg",
+      "thumb_img" : "3d_facade_left_thumb.jpg"
+    }
+  ],
+  "floor_plans" : [
+    {
+      "title"    : "floor_01",
+      "main_img" : "floor_01.jpg"
+    },
+    {
+      "title"    : "floor_02",
+      "main_img" : "floor_02.jpg"
+    }
+  ]
+}
