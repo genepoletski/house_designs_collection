@@ -1,0 +1,6 @@
+{
+  "name": "House designs collection",
+  "tagline": "Backbone based module for collection manipulations",
+  "body": "# Project \"house_designs_collection\"\r\nHouse designs manageable collection\r\n\r\n## Module features\r\n- set filter parameters (house area, number of floors, techonolgy e.t.c.);\r\n- set collection pagination options (navigate through collection, change elements view order by parameters e.t.c.);\r\n- view projects details;\r\n- store/restore module statement via URI (works with HistoryAPI);\r\n\r\n## Dependencies\r\n- Backbone;\r\n- Underscore;\r\n- RequireJS;\r\n- jQuery;\r\n- Bootstrap;\r\n\r\n## Deployed project URI\r\nhttp://www.epwoodworks.ru/projects.html\r\n\r\n## Git Pages\r\nhttps://web-developer-poletski.github.io/house_design_cost_calc/\r\n\r\n## Releases\r\n1.0.0 https://github.com/web-developer-poletski/house_designs_collection/releases/tag/v1.0.0\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
