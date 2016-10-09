@@ -18,7 +18,7 @@ House designs manageable collection
 http://www.epwoodworks.ru/projects.html
 
 ## Git Pages
-https://web-developer-poletski.github.io/house_design_cost_calc/
+https://web-developer-poletski.github.io/house_designs_collection/
 
 ## Releases
 1.0.0 https://github.com/web-developer-poletski/house_designs_collection/releases/tag/v1.0.0
